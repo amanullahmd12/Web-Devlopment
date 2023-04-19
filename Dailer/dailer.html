@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keypad</title>
+    <style>
+        .keypad-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .keypad {
+            width: 300px;
+            height: 500px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            padding: 20px;
+        }
+
+        .keypad button {
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            border-color: black;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body <div class="keypad-container">
+    <div class="keypad">
+        <button onclick="showMessage(1)">1</button>
+        <button onclick="showMessage(2)">2<br>ABC</button>
+        <button onclick="showMessage(3)">3<br>DEF</button>
+        <button onclick="showMessage(4)">4<br>GHI</button>
+        <button onclick="showMessage(5)">5<br>JKL</button>
+        <button onclick="showMessage(6)">6<br>MNO</button>
+        <button onclick="showMessage(7)">7<br>PQRS</button>
+        <button onclick="showMessage(8)">8<br>TUV</button>
+        <button onclick="showMessage(9)">9<br>WXYZ</button>
+        <button onclick="showMessage('*')">*</button>
+        <button onclick="showMessage(0)">0</button>
+        <button onclick="showMessage('#')">#</button>
+    </div>
+    </div>
+
+    <script>
+        function showMessage(buttonNumber) {
+            alert("You pushed button " + buttonNumber);
+        }
+    </script>
+</body>
+
+</html>
